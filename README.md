@@ -1,0 +1,2 @@
+# DAM
+En este proyecto insertare todas la practicas realizadas con el fin de que sirvan de ejemplo a otras persona.  Es posible que el código que se encuentra aquí tenga errores o sea optimizable pero no tendrán mantenimientos ya que solo se realizaron para aprobar el curso formativo correspondiente. Todo el código esta sobre comentado por lo que creo que sera didáctico para personas no familiarizadas con la programación.
