@@ -1,0 +1,43 @@
+Rubio Avila Mario Tarea 7.1 2019 
+Este fichero tiene la intencion de facilitar los trabajos de correccion y mantenimiento del codigo
+Se intento reutilizar el mayor numero de codigo sin ser modificado para facilitar la correccion.
+
+Cuando se abre el cuadro de cargar/guarda fichero en el ejercio 3 muestra una advertencia o error. 
+log4cplus: ERROR No se pudieron encontrar agregadores para el registrador (AdSyncNamespace). 
+log4cplus: ERROR Inicialice el sistema log4cplus correctamente. 
+Esta advertencia es dada si se ejecuta en windows 10 o una incompatibilidad con alguna aplicacion.
+Es interna a la libreria import javax.swing.JFileChooser; y no afecta al funcionamiento del ejercicio.
+
+
+La estructura del proyecto es la siguiente:
+	rubio_avila_mario_tarea7        -> Paquete con el main principal
+		Main.Java 					-> Menu que permite la seleccion del ejercicio.
+		
+	res.background                  -> Incluye las imagenes de fondo del interface de acceso y del menu principal. 
+	recurses						-> Dispone de los ficheros de texto de prueba del cifrado cesar y se hace apuntar por defecto alli a las 
+									   ventanas de manipulacion de archivos
+		
+	Utilidades						-> Librerias propias (IDENTICO TAREA 6.1) (MAYORMENTE NO USADO) 
+		ColorConsole.java			-> Permite colorear en consola (No compatible con Eclipse)
+		ToolAndMenu.java		    -> Mayormente operaciones para decorar en terminal. (NO USADO EN ESTA TAREA)
+											Decoracion de titulos.
+											Creacion de menus principales.
+											Capturadores por teclado de variables(int,doubles, String, yes or no) con sus excepcion controladas.
+											Pausas (Por teclas) o por tiempos.
+											
+    Ejercicio1.Login     			-> Se realiza un frame para el control de acceso.
+		Login.java       			-> Dispone de la logica del acceso.
+		LoginMain.Java   			-> Dispone la GUI del control de acceso.
+		
+	Ejercicio2.Banco     			-> Se realiza un dashboard para controlar operaciones bancarias.
+		CifradoMain.java 			-> Dispone la GUI del dashboard de banco.
+		ExceptionSaldoNegativo.java -> Es una excepcion propia para controlar cuando en una retirada.
+									   el salgo es negativo para poder evitar el sacar dinero y quedarse en negativo.
+		cuenta.java					-> Es la clase que se instancia para tener una cuenta bancaria, instanciaremos tantas como clientes deseemos.
+		
+	Ejercicio3.CifradoMain		    -> Es el cifrado cesar de la tarea 6.1 pero con GUI.
+		CifradoMain.java		    -> Dispone de la GUI del cifrado cesar.
+		DesencriptacionCesar.java   -> Es la clase encargada de la desencriptacion del codigo cesar (IDENTICO TAREA 6.1)
+		EncriptacionCesar.java      -> Es la clase encargada de la encriptacion del codigo cesar (IDENTICO TAREA 6.1)
+		WriteReadToFile.java 	    -> Es la clase encargada de la lectura/escritura de los ficheros de texto (MODIFICACIONES MINIMAS DE LA TAREA 6.1)
+											La modicacion (anulo la confirmacion de sustitucion por terminal).
