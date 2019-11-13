@@ -1,0 +1,45 @@
+Rubio Avila Mario Tarea 10.1 2019 
+
+Este fichero tiene la intencion de facilitar los trabajos de correccion y mantenimiento del codigo.
+Se intenta mantener un codigo limpio facil de leer pero modulable, escalable y reutilizables.
+
+Existen los siguiente caracteristicas
+	En BBDD
+		1.- En la base de datos se creo una entidad persona para practicar la herencia.Que tienen los campos Nombre, Appellido1, Apellido2.
+	En programa JAVA
+		1.- Exiten clase que dan un apoyo para facilitar el flujo de la base de datos y asi evitar sobre cargar conexiones a la base de datos.
+		2.- Dos clases realizan todo el trabajo con relacion a la bbdd estas son jdbc_ConexionMascotas.java y jdbc_ManipulacionMascotas.java.
+
+Aunque se que el codigo es complejo, mis objetivo siempre es sacar programas terminados funcionales con las funcionalidades
+requeridas en el requerimiento minimo, junto a las logicas que deben incluir para un correcto funcionamiento.
+
+El codigo es totalmente testeado antes de su presentacion y totalmente comentado para facilitar su interpretacion.
+Se fragmenta el codigo para facilitar la reutilizacion y poder intentar separa el codigo cuando crece demasiado.
+
+
+La estructura del proyecto es la siguiente:
+	rubio_avila_mario_tarea10               -> Paquete principal
+		Rubio_Avila_Mario_Tarea101.java -> Main.(No hace nada, llama a MascotaConsolaMain.java)
+		MascotaConsolaMain.java         -> Main de la aplicacion en modo consola.
+		jdbc_ConexionMascotas.java	-> Configura la conexion,gestiona la excepciones con la bd y dispone de las ordenes preconfiguradas del sql.
+		jdbc_ManipulacionMascotas.java  -> Realiza toda las manipulaciones con la base de datos.
+		Textos_MainMenu.java	        -> Guarda los array de los textos a mostrar por los menus.Los menus lo conforman la libreria ToolsAndMenu con la funcion menu.
+
+	rubio_avila_mario_tarea10.pkg1.Mascotas
+		Cuidador.java		        -> Permite la manipulacion facil y sencilla del cuidador tras extraerlas de la bbdd.
+		Mascota.java			-> Permite la manipulacion facil y sencilla de la mascota tras extraerlas de la bbdd.	
+
+	FicherosSQL
+		DDL_Ejercicio.sql		-> Crea toda las extructuras sobre la base de datos.
+		DML_RegistrosDePrueba.sql       -> Permite crear un par de registros desde la base de datos para comprobar su funcionamiento.
+		export.sql                      -> Exportacion de la estructura
+
+	Utilidades				-> Librerias propias
+		ColorConsole.java		-> Permite colorear en consola (No compatible con Eclipse)
+		ToolsAndMenu.java	        -> Mayormente operaciones para decorar en terminal.(Exiten unas modificaciones ligeras)
+											* Decoracion de titulos.
+											* Creacion de menus principales.
+											* Capturadores por teclado de variables(int,doubles, String, yes or no) con sus excepcion controladas.
+											* Pausas (Por teclas) o por tiempos.
+											* Generador de numeros aleatorios con minimos y maximo (NO USADA PARA NO ABSTRAER CODIGO CODIGO)
+											
