@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE receta>
+
+<recetas>
+	<receta nombre="Sopa de cebolla">
+		<ingredientes>
+			<ingrediente nombre="cebollas">
+				<cantidades>
+					<cantidad comensales="x">x kilogramo de</cantidad>
+					<cantidad comensales="4">2 kilogramo de</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="caldo de carne">
+				<cantidades>
+					<cantidad comensales="x">x litros de</cantidad>
+					<cantidad comensales="4">3 litros de</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="mantequilla">
+				<cantidades>
+					<cantidad comensales="x">x gramos de</cantidad>
+					<cantidad comensales="4">200 gramos de</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="harina">
+				<cantidades>
+					<cantidad comensales="x">x cucharadas de</cantidad>
+					<cantidad comensales="4">2 cucharadas de</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="queso emmental suizo o gruyere rayado">
+				<cantidades>
+					<cantidad comensales="x">x gramos</cantidad>
+					<cantidad comensales="4">200 gramos</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="pan tostado en rebanadas">
+				<cantidades>
+					<cantidad comensales="x">x, una por comensal de</cantidad>
+					<cantidad comensales="4">4, una por comensal de</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="tomillo">
+				<cantidades>
+					<cantidad comensales="x">Una pizca de</cantidad>
+					<cantidad comensales="4">Una pizca de</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="laurel">
+				<cantidades>
+					<cantidad comensales="x">x hoja</cantidad>
+					<cantidad comensales="4">2 hoja</cantidad>
+				</cantidades>
+			</ingrediente>
+			<ingrediente nombre="pimienta blanca">
+				<cantidades>
+					<cantidad comensales="x">Una pizca de</cantidad>
+					<cantidad comensales="4">Una pizca de</cantidad>
+				</cantidades>
+			</ingrediente>
+		</ingredientes>
+		<procesos>
+			<proceso paso="1">Pelar y partir las cebollas en rodajas finas.</proceso>
+			<proceso paso="2">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.</proceso>
+			<proceso paso="3">Añadir la harina sin dejar de remover.</proceso>
+			<proceso paso="4">Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</proceso>
+			<proceso paso="5">Dejar cocer a fuego lento durante unos 15 minutos.</proceso>
+			<proceso paso="6">Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</proceso>
+		</procesos>
+	</receta>
+</recetas>

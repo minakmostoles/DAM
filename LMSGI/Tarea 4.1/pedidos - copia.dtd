@@ -1,0 +1,34 @@
+</xs:annotation>
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="urgente"></xs:enumeration>
+			<xs:enumeration value="incompleto"></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="datos_ordenante">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="dir_albaran"/>
+<xs:element minOccurs="0" ref="dir_entrega"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="dir_albaran">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="dir"/>
+<xs:element ref="localidad"/>
+<xs:element ref="cp"/>
+<xs:element ref="provincia"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="dir_entrega">
+<xs:complexType>
+<xs:sequence>
+	<xs:element ref="dir"/>
+	<xs:element ref="localidad"/>
+	<xs:element ref="cp"/>
+	<xs:element ref="provincia"/>
+</xs:sequence>

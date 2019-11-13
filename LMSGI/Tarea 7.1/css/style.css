@@ -1,0 +1,99 @@
+﻿/*Tarea 7.1 - Rubio Avila Mario*/
+body{    
+    margin: 0%;
+}
+
+.fondo{
+    position: fixed;
+     /* Ubicación de la imagen */
+    background-image:url("../imagenes/fondo.jpg");       
+    width: 100vw;
+    height: 100vh;
+    /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-position: center center;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    background-color: rgba(0, 0, 0);
+}
+
+.cajaContenido{
+    /*Mostramos los elementos como si una columna fuese*/
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 70%;
+    height: auto;
+    border-radius: 1ch;
+    background-color:rgba(0, 0, 0, 0.300);
+}
+
+.menuSuperior{
+    margin: 10px;
+    background-color:rgba(0, 0, 0, 0.400);
+    border-radius: 1ch;
+    text-align: center;
+    padding:10px;
+}
+
+/*Estilos para el contenido*/
+.contenido{
+    position:relative;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imagenSeleccionada{
+    
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.texto-encima{
+    position: absolute;
+    max-width: 40%;
+    max-height: 99%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
+    background-color:rgba(0, 0, 0, 0.400);
+}
+
+.texto{
+    color: azure;
+}
+
+h2{
+    color: rgb(228, 184, 41);
+    text-align: center;
+}
+
+/*Estilos para menu de fotos*/
+.menuFotos{
+    border-radius: 1ch;
+    text-align: center;
+    margin: 10px;
+    background-color:rgba(0, 0, 0, 0.400);
+    padding:10px;
+}
+
+/*Estilos para el about me*/
+footer{
+    /*Recuadro exterior*/
+    margin-bottom: 0px;
+    margin: 0 auto;
+    border-radius: 0.5ch;
+    width: 70%;
+    background-color:rgba(0, 0, 0, 0.300);
+    /*Texto*/
+    color: azure;
+    text-align: center;
+}
+

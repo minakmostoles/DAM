@@ -1,0 +1,14 @@
+/*Hoja de estilos Tarea 6.1 de LMSGI
+* Mario Rubio Avila 03-2019
+*/
+body{ 
+	background-color:#0B2F3A; 	/*Color del fondo*/
+	color: #FBEFEF;   			/*Color del texto*/
+	}
+
+h1.tituloConvocatoria{
+	text-decoration: white;
+	text-decoration: underline;
+}
+
+

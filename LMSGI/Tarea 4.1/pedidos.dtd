@@ -1,0 +1,19 @@
+<!ELEMENT pedidos (pedido*)><!--0 o mucho pedido-->
+
+<!ELEMENT pedido (sucursal, dir_entrega, nom_trabajador,f_pedido,obs_pedido,plazo_revision,articulo+)><!--1 o muchos articulos-->
+<!ATTLIST pedido cod_pedido CDATA #REQUIRED>
+
+<!ELEMENT sucursal (#PCDATA)>
+<!ELEMENT dir_entrega (#PCDATA)>
+
+<!ELEMENT nom_trabajador (#PCDATA)>
+<!ELEMENT f_pedido (#PCDATA)>
+<!ELEMENT obs_pedido (#PCDATA)>
+<!ELEMENT plazo_revision (#PCDATA)>
+
+<!ELEMENT articulo (unidades,precio_und,obs_articulo)>
+<!ATTLIST articulo cod_articulo CDATA #REQUIRED>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precio_und (#PCDATA)>
+<!ELEMENT obs_articulo (#PCDATA)>
+

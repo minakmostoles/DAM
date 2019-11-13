@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8' />
+	<meta name='description' content='Tarea 2.1 Ejercicio2' />
+	<meta name='keywords' content='Tarea 2.1 Ejercicio2' />
+	<meta name='author' content='Mario Rubio Avila' />
+	<title>Tarea 2.1 Ejercicio2.</title>
+</head>
+	<body>
+		<header> <!-- cabecera para logotipo y encabezado visual -->
+			<!--<h1 align="center">Tarea 2.1 Ejercicio 2</h1> -->
+			<h1>RESERVAS DE HOTEL - 2018</h1>
+			<hr size="2px" color="gray" />
+		</header>
+		
+		<form action="" method="get">
+		<!-- Datos Personales -->
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+					<tr> <!-- Fila 1 --> 
+						<td align="left" width="50%"><!-- Columna 1 -->
+							<fieldset>
+								<legend>Datos Personales</legend>
+								<p>Nombre: <input type="text" name="nombre" maxlength="50" placeholder="Escribe su nombre"/></p>
+								<p>Apellidos: <input type="text" name="apellidos" maxlength="50" placeholder="Escribe su appellido"/></p>
+							</fieldset>
+						</td>
+						<td align="left" width="50%"><!-- Columna 2 -->
+						<!-- Datos Contacto -->
+							<fieldset>
+								<legend>Datos Contacto</legend>
+								<p>Telefono: <input type="number" name="Telefono" required="required" placeholder="Escribe su telefono"/> </p>
+								<p>Correo: <input type="text" name="correo" maxlength="200" placeholder="Escribe su correo"/></p>
+							</fieldset>
+						</td>
+				</table>
+		<!-- Datos -->
+			<fieldset>
+				<legend>Datos</legend>
+				<p>Numero De Noches :
+					<input type="number" name="noches" min="1" required="required" value="1"> <!-- Requerido ,minimo 1 por defecto 1-->
+				</p>
+				<p>Fecha de entrada :
+					<input id="date" type="date" placeholder="dd/mm/aaaa">
+				</p>			
+				<p>Tipo de habitacion :
+				   <input type="radio" name="tipohabitacion" value="simple" /> Simple 
+				   <input type="radio" name="tipohabitacion" value="doble" /> Doble
+				   <input type="radio" name="tipohabitacion" value="matrimonio" /> Matrimonio
+				</p>
+				<p>Opciones Extra :  
+				   Desayuno <input type="checkbox" name="desayuno" value="desayuno" />  
+				   Comida <input type="checkbox" name="tipohabitacion" value="doble" />
+				   Cena <input type="checkbox" name="tipohabitacion" value="matrimonio" />
+				   Cama Supletoria <input type="checkbox" name="camasupletoria" value="camaSupletoria" />
+				</p>
+			</fieldset>
+		<!-- Manera contacto -->
+			<p>Comentario</p>
+			<p><textarea name="comentario" rows="5" cols="50" placeholder="Escribe aquí tu comentario"></textarea></p>
+		<!-- Manera contacto -->
+			<p><hr size="2px" color="gray"/></p>
+			<p>¿Como encontro VD. nuestro establecimiento?</p>
+			<p><input type="radio" name="canal" value="internet" /> Internet 
+			   <input type="radio" name="canal" value="publicidad" /> Publicidad
+			   <input type="radio" name="canal" value="amigo" /> Amigo
+			   <input type="radio" name="canal" value="otros" /> Otros
+			</p>
+		<!-- Botones Formulario-->
+			<hr size="2px" color="gray" />
+			<p><input type="submit" value="Enviar Reserva" /> <input type="reset" value="Limpiar" /></p>
+		</form>
+		<footer align="center"> <!-- Pie para el copyright y demás -->
+		Tarea 2.1 - Ejercicio2 - Mario Rubio Avila 
+		</footer>
+	</body>
+</html>

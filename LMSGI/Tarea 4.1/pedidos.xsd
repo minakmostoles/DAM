@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:annotation>
+		<xs:documentation>Creado por Mario Rubio Avila el 01/2019 Tarea 4.1 LMSGI DAMEL </xs:documentation>
+	</xs:annotation>
+	<xs:element name="pedidos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pedido" minOccurs="0" maxOccurs="unbounded"> 
+					<xs:complexType>
+						<xs:sequence>			
+							<xs:element name="sucursal" type="xs:string"/>
+							<xs:element name="dir_entrega" type="xs:string"/>
+							<xs:element name="nom_trabajador" type="xs:string"/>
+							<xs:element name="f_pedido" type="xs:date"/>
+							<xs:element name="obs_pedido">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Urgente"/>
+										<xs:enumeration value="Incompleto"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="plazo_revision" type="xs:integer"/>
+							<xs:element name="articulo" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="unidades" type="xs:decimal"/><!--Puede ser entero pero lo pongo decimal por si alguna vez la unidad es metros o por peso-->
+										<xs:element name="precio_und" type="xs:decimal"/>
+										<xs:element name="obs_articulo" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute name="cod_articulo" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="cod_pedido" use="required">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:pattern value="[a-zA-Z]{1}[a-zA-Z0-9]{7}"/>
+									</xs:restriction>
+								</xs:simpleType>
+						</xs:attribute>
+						
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

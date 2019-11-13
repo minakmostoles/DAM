@@ -1,0 +1,32 @@
+﻿/*Tarea 7.1 - Rubio Avila Mario*/
+.button{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: rgb(228, 184, 41);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a.button:hover { 
+    background-color: yellow;
+    border-radius: 0.5ch;/*Un pequeño radio para suavizar formas*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  a.buttonSelect { 
+    background-color: yellow;
+    border-radius: 1ch;/*Un pequeño radio para suavizar formas*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+.imagenBoton{
+    /*Separacion*/
+    padding-left: 1px;
+    padding-right: 1px;
+    /*Fotos*/
+    width: 125px;
+    height:95px;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE agenda>
+
+<agenda>
+	<contacto>
+		<nombre>Mario</nombre>
+		<apellidos>Rubio Avila</apellidos>
+		<direccion>Calle Cid Campeador</direccion>
+		<telefonos>
+			<tlfcasa>0034916177555</tlfcasa>
+			<tlfmvl>0034656984888</tlfmvl>
+			<tlftrabajo>00212642781794</tlftrabajo>
+		</telefonos>
+	</contacto>
+	<contacto>
+		<nombre>Beatriz</nombre>
+		<apellidos>Mendez Blas</apellidos>
+		<direccion>Calle Oudrid</direccion>
+		<telefonos>
+			<tlfcasa>0034914454545</tlfcasa>
+			<tlfmvl>0034665454452</tlfmvl>
+			<tlftrabajo>0034525124435</tlftrabajo>
+		</telefonos>
+	</contacto>
+</agenda>

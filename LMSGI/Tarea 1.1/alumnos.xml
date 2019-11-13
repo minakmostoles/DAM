@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE alumnos>
+
+<curso cf="DAM">
+	<modulo nombremodulo="Lenguajes de Marcas y Sistemas de Gestión">
+		<cargalectiva horassemanales="4"></cargalectiva>
+		<fechainicio dia="15" mes="sep" año="2015"></fechainicio>
+		<fechafinal dia="30" mes="jun" año="2016"></fechafinal>
+		
+		<alumnos>
+			<alumnoficha>
+				<alumno nombre="Ana" apellido1="Sánchez" apellido2="Gutiérrez"/>
+				<nif>36965696L</nif>
+				<tlf>689654321</tlf>
+				<email>ana.fdezgtrrez@yahoo.com</email>
+				<direccion nombredireccion="C/El percebe" numero="15" ciudad="Cáceres" codigopostal="47302"/>
+				<asistencia>Datos de asistencia no registrados</asistencia>
+				<nota>Datos de notas no registrados</nota>
+			</alumnoficha>
+			
+			<alumnoficha>
+				<alumno nombre="Pepito" apellido1="Garcia" apellido2="Grillo"/>
+				<nif>48765432H</nif>
+				<tlf>756566555</tlf>
+				<email>yhyh@hotmail.com</email>
+				<direccion nombredireccion="Avd. El pez" numero="9" ciudad="Suances" codigopostal="39401"/>
+				<asistencia>No tiene faltas de asistencia</asistencia>
+				<nota>APTO</nota>
+			</alumnoficha>
+		</alumnos>
+	</modulo>
+</curso>

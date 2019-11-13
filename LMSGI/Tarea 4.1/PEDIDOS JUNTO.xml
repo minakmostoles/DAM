@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos [
+	<!ELEMENT pedidos (pedido*)><!--0 o mucho pedido-->
+	
+	<!ELEMENT pedido (sucursal, dir_entrega, nom_trabajador,f_pedido,obs_pedido,plazo_revision,articulo+)><!--1 o muchos articulos-->
+	<!ATTLIST pedido cod_pedido CDATA #REQUIRED>
+
+	<!ELEMENT sucursal (#PCDATA)>
+	<!ELEMENT dir_entrega (#PCDATA)>
+
+	<!ELEMENT nom_trabajador (#PCDATA)>
+	<!ELEMENT f_pedido (#PCDATA)>
+	<!ELEMENT obs_pedido (#PCDATA)>
+	<!ELEMENT plazo_revision (#PCDATA)>
+
+	<!ELEMENT articulo (unidades,precio_und,obs_articulo)>
+	<!ATTLIST articulo cod_articulo CDATA #REQUIRED>
+	<!ELEMENT unidades (#PCDATA)>
+	<!ELEMENT precio_und (#PCDATA)>
+	<!ELEMENT obs_articulo (#PCDATA)>
+]>
+<pedidos>
+	<pedido cod_pedido=""><!--Formado por una cadena de 8 caracteres de los cuales el primero es una letra-->
+		<!--CENTRO ADMINISTRATIVO Y INFORMACION ENVIO-->
+		<sucursal></sucursal><!--Datos de la sucursal que realiza el pedido-->
+		<dir_entrega></dir_entrega><!--Direcciones para los envíos correspondientes-->
+		<!--PEDIDO-->
+		<nom_trabajador></nom_trabajador><!--Nombre del trabajador que realiza el pedido.-->
+		<f_pedido></f_pedido><!--Fecha del pedido.-->
+		<obs_pedido></obs_pedido><!--Observaciones sobre el pedido, cuyos valores son, en caso de que exista el dato: urgente o incompleto.-->
+		<plazo_revision></plazo_revision><!--Plazo de revisión de los productos recibidos que será un intervalo de tiempo expresado en días y dependerá del precio final del pedido.-->
+		<!--ARTICULO-->
+		<articulo cod_articulo=""><!--Código del artículo, formado por tres letras mayúsculas y tres dígitos separados por un guión. Es la referencia que tiene que dar el ordenante a la sede en caso de devolución de algún artículo.-->
+			<unidades></unidades><!--Número de unidades pedidas.-->
+			<precio_und></precio_und><!--Precio de cada unidad.-->
+			<obs_articulo></obs_articulo><!--Observaciones del artículo.-->
+		</articulo>
+	</pedido>
+</pedidos>

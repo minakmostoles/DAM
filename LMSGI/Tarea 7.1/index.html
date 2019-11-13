@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <link href="css/menu.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico" />
+        <script type="text/javascript" src="js/visor.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Toledo Eventos Tarea 7.1</title>
+
+    </head>
+    <body>
+        <div class="fondo"><!--Fondo-->
+            <div class="cajaContenido"><!--Elementos-->
+                <div class="menuSuperior">
+                    <a class="button" onclick="selectFoto(1)" name="opcion1">INICIO</a>
+                    <a class="button" onclick="selectFoto(2)" name="opcion2">ALCAZAR</a>
+                    <a class="button" onclick="selectFoto(3)" name="opcion3">GREDO</a>
+                    <a class="button" onclick="selectFoto(4)" name="opcion4">ALCAZAR</a>
+                    <a class="button" onclick="selectFoto(5)" name="opcion5">CAMBRÓN</a>
+                    <a class="button" onclick="selectFoto(6)" name="opcion6">CATEDRAL</a>
+                    <a class="button" onclick="selectFoto(7)" name="opcion7">PANORAMICA</a>
+                </div><!--Menu Superior-->
+                <div class="contenido">
+                        <div class="texto-encima">
+                            <h2> Toledo... Donde la piedra es joya</h2><hr>
+                            <p class="texto">La ciudad fue tomada por el romano Marco Fulbio Nobilior,
+                            que construyó Toletum sobre estas ruinas carpetanas.</p>
+                            <p class="texto">Desde el siglo V, los pueblos bárbaros invaden el Imperio
+                            Romano en distintas ocasiones. Los alanos ocuparon Toledo en el 411. </p>
+                            <p class="texto">En el año 569, Atanagildo instala su Corte en Toledo y con el rey Leovigildo pasa a ser capital del
+                            reino hispano-godo.</p>
+                        </div>                    
+                    <img class="imagenSeleccionada" src="imagenes/panoramica1.jpg" name='fotoVisor'>
+                </div><!--Zona Dessarrollo-->
+                <div class="menuFotos">                    
+                    <img class="imagenBoton" src="imagenes/panoramica1.jpg" onmouseenter="selectFoto(1)">
+                    <img class="imagenBoton" src="imagenes/panoramica2.jpg" onmouseenter="selectFoto(2)">
+                    <img class="imagenBoton" src="imagenes/panoramica3.jpg" onmouseenter="selectFoto(3)">
+                    <img class="imagenBoton" src="imagenes/panoramica4.jpg" onmouseenter="selectFoto(4)">
+                    <img class="imagenBoton" src="imagenes/panoramica5.jpg" onmouseenter="selectFoto(5)">
+                    <img class="imagenBoton" src="imagenes/panoramica6.jpg" onmouseenter="selectFoto(6)">
+                    <img class="imagenBoton" src="imagenes/panoramica7.jpg" onmouseenter="selectFoto(7)">
+                </div><!--Menu Fotos-->          
+            </div>
+
+            <footer class="about"><!--Copyleft-->  
+                <p>Toledo Eventos Tarea 7.1 - Mario Rubio Avila - 2019</p>
+            </footer>               
+        </div>
+    </body>
+
+</html>

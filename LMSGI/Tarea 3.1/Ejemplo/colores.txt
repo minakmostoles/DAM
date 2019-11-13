@@ -1,0 +1,9 @@
+fuente          --> 6d6868
+fondo documento --> f7f7f7
+fondo menu       --> eaeaea
+bordes          --> dbdbdb
+
+
+--------------------------------------------------------------------------------------------------
+para los border completos, podemos poner los border de otra forma  --> outline:1px solid #dcdcdc;
+

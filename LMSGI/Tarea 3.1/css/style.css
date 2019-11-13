@@ -1,0 +1,121 @@
+/*
+ *“Práctica realizada por Mario Rubio Avila el día 12/12/2018”.
+ */
+
+body {
+    background: #f7f7f7;
+    text-align: justify;
+    font-family: serif;
+    color: #6d6868;
+    font-size: 20px;
+	margin:50px 100px; 				/*Margen con respecto a la ventana principal y de hay comenzamos a trabajar*/
+}
+header{
+	margin:0px 10px; 				/*Margen con respecto a la ventana principal y de hay comenzamos a trabajar*/
+}
+a{
+	color: #6d6868;
+	text-decoration: none;		/*Quito el subrallado*/
+	margin:0 10px; 				/*Margen entre los textos del menu principalmente*/
+}
+p{
+	color: #6d6868;
+	margin:0 10px; 				/*Margen entre los textos del menu principalmente*/
+	text-align: justify;
+}
+footer{
+	border-bottom: #dbdbdb 3px solid; /* Borde inferior */
+	border-top: #dbdbdb 3px solid;    /* Borde superior */
+	border-left: transparent; 		  /* Borde derecho transparente */
+	border-right: transparent;        /* Borde izquierdo transparente */
+	color: #6d6868;
+	text-align: right;
+	background: #eaeaea;
+	margin: 0px 10px; 				/*Margen con los bordes y con las divisiones superiores*/
+	font-size: 15px;
+}
+table{
+	border: transparent; /* Borde */
+	color: #6d6868;
+	text-align: center;
+	margin:10px 10px;
+}
+td{
+	border: transparent; /* Borde */
+	color: #6d6868;
+	text-align: center;
+}
+
+/*Estilo para la division concretas*/
+div#menus {
+	border-bottom: #dbdbdb 3px solid; /* Borde inferior */
+	border-top: #dbdbdb 3px solid;    /* Borde superior */
+	border-left: transparent; 		  /* Borde derecho transparente */
+	border-right: transparent;        /* Borde izquierdo transparente */
+	text-align: left;
+	color : #6d6868;
+	background: #eaeaea;
+	font-size: 24px;
+	margin:20px 10px; 				/*Margen con los bordes y con las divisiones superiores*/
+}
+div#fotos {
+	text-align: center;
+	border: transparent; 
+	color: #6d6868;
+}
+
+/*Estilo para las imagenes*/
+img.logo{
+  width: 450px; height: 200px;
+}
+img.icon {
+	width: 30px; height: 30px;
+	float:right; 
+	margin:0 5px; 				/*Margen entre iconos*/
+}
+img.fotos{
+  width: 200px; height: 200px;	/*Tamaño de las fotos*/
+  margin:0 10px; 				/*Margen entre fotos*/
+}
+img.botones{
+  width: 50px; height: 20px;	/*Tamaño de las fotos*/
+  margin:0 10px; 				/*Margen entre fotos*/
+  float:right; 
+}
+
+/*Usado para la configuracion de la division del texto*/
+div.textopagina{
+	/*border:#dbdbdb 2px solid;		Creamos el borde(Lo desabilito al no ser necesario)*/
+	box-shadow: 0 0 0 2px #dbdbdb;  /*Creamos la sombre del borde anterior*/
+	outline: solid 1px #f7f7f7; 	/*Creamos el recuadro de separacion del color de fondo*/
+	background: #eaeaea;
+	margin:20px 10px; 				/*Margen con los bordes y con las divisiones superiores*/
+}
+
+/*Configuracion de los cuadros de los titulos*/
+p.titulo{
+	/*border:#dbdbdb 2px solid;		Creamos el borde(Lo desabilito al no ser necesario)*/
+	box-shadow: 0 0 0 2px #dbdbdb;  /*Creamos la sombre del borde anterior*/
+	outline: solid 1px #f7f7f7; 	/*Creamos el recuadro de separacion del color de fondo*/
+	background: #eaeaea;
+	margin:20px 0px; 				/*Margen con los bordes y con las divisiones superiores*/
+}
+
+/*Usado para poner la primera letra del menu mas grande*/
+.first-letter {
+font-size: 32px;
+font-weight: serif;
+}
+
+/*Solo sirve para parrafos(TEST)*/
+.menus{
+font-size: 14px;
+font-weight: normal;
+}
+.menus:first-letter {
+font-size: 16px;
+font-weight: serif;
+color: red;
+}
+
+
