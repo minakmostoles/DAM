@@ -1,0 +1,56 @@
+Rubio Avila Mario Tarea 9.1 2019 
+
+Este fichero tiene la intencion de facilitar los trabajos de correccion y mantenimiento del codigo.
+Se intenta mantener un codigo limpio facil de leer pero modulable, escalable y reutilizables.
+
+Existen dos grandes modificaciones con respecto al enunciado propuesto. 
+	1.- Propietario hereda de viajero ya que este puede viajar es tambien viajero.
+	2.- Las personas se le incluye el DNI para evitar duplicidades
+	3.- En viajeros la lista que se muestra es todos los viajeros de la aplicacion (Viajeros + Propietario)
+	4.- Hay 5 informes prefijados, se crean y actualizan solo, el crear informes personalizados no esta implementado aun.
+	    * informesPersonas  -> informesPersonas (0) es la informacion de todos los viajeros 
+		*                      informesPersonas (1) es la informacion de todos los propietarios
+		*                      informesPersonas (2) es la informacion de todos los que alguna vez han hecho un viaje sean viajeros o propietarios
+		* informesVehiculos -> informesVehiculos(0) es la informacion de los coches
+		*                      informesVehiculos(1) es la informacion de las furgonetas
+	5.- Hay un modo demo comprueba las clases y testea todas las clases automaticamente. Ver static private void modoDEMO()
+		Se puede desabilitar llevando la variable public static final boolean MODEDEMO = false;
+	6.- Existio la idea de implentarlo graficamente por no liar se deja para futuras versiones  public static boolean activateGUI=false; (NO IMPLEMENTADO)
+	
+Aunque se que el codigo es complejo, mis objetivo siempre es sacar programas terminados funcionales con las funcionalidades
+requeridas en el requerimiento minimo, junto a las logicas que deben incluir para un correcto funcionamiento.
+El codigo es totalmente testeado antes de su presentacion y totalmente comentado para facilitar su interpretacion.
+Se fragmenta el codigo para facilitar la reutilizacion y poder intentar separa el codigo cuando crece demasiado.
+
+
+La estructura del proyecto es la siguiente:
+	rubio_avila_mario_tarea9         -> Paquete con el main principal
+		Main.Java 					 -> Main.(No hace nada, llama a VehiculosCorpartidosMain) 
+		VehiculosCorpartidosMain.java-> Main de consola.
+		Textos_MainMenu.java	     -> Guarda los array de los textos a mostrar por los menus.Los menus lo conforman la libreria ToolsAndMenu con la funcion menu.
+
+	MediosDeTransporte				 -> Paquete que administra los tipos de vehiculos.
+		Coche.java 					 -> Clase que implementa Vehiculo y define una Coche
+		Furgoneta.java			     -> Clase que implementa Vehiculo y define una Furgoneta
+		Vehiculo.java			     -> Clase abtrasta
+	
+	Recorridos						 -> Paquete que define un viaje, y los informes.
+		Informe.java		         -> Es un interface que define como tiene que ser un informes.
+		InformePersona.java		     -> Implementa a informe y conforma lo que tiene que ser un informe para personas.
+		InformeVehiculo.java		 -> Implementa a informe y conforma lo que tiene que ser un informe para vehiculos.
+		Viaje.java		             -> Conforma lo que es un viaje con una lista de viajeros y un vehiculo.
+
+	Usuarios					     -> Paquete que indica los tipos de personas/usuarios del servicio
+		Persona.java				 -> Definen las caracteristicas de una persona
+		Propietario.java			 -> Define como es un viajero y a parte hereda de persona por lo que tiene todas las cosas de la clase persona
+		Viajero.java                 -> Define como es un propietario y a parte hereda de viajero por lo que tiene todas las cosas de la clase persona y viajero
+
+	Utilidades						 -> Librerias propias (Identico a tarea 8.1)
+		ColorConsole.java			 -> Permite colorear en consola (No compatible con Eclipse)
+		ToolsAndMenu.java		     -> Mayormente operaciones para decorar en terminal.(Identico a tarea 8.1)
+											* Decoracion de titulos.
+											* Creacion de menus principales.
+											* Capturadores por teclado de variables(int,doubles, String, yes or no) con sus excepcion controladas.
+											* Pausas (Por teclas) o por tiempos.
+											* Generador de numeros aleatorios con minimos y maximo (NO USADA PARA NO ABSTRAER CODIGO CODIGO)
+											

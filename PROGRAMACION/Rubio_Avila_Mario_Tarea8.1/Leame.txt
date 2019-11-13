@@ -1,0 +1,51 @@
+Rubio Avila Mario Tarea 8.1 2019 
+
+Este fichero tiene la intencion de facilitar los trabajos de correccion y mantenimiento del codigo.
+Se intenta mantener un codigo limpio facil de leer pero modulable, escalable y reutilizables.
+
+Toda entrada a ejercicio se realiza por una funcion main por ejemplo public static void MainTemperature() es la la entrada pero 
+el verdadero trabajo el motivo es facilita en un futuro la separacion del codigo si se necesita coger como programa independiente. Es el decir es un
+main ficticio del ejercicio.
+
+Se comenzo el ejercicio en modo con interface grafica, pero por poblemas tecnicos con la placa base del portatil no lo podre concluir.
+Si se desea habilitar el acceso se tiene que descomentar su opcion en el menu Textos_MainMenu.java pero no esta del todo concluido.
+
+La estructura del proyecto es la siguiente:
+	rubio_avila_mario_tarea8        -> Paquete con el main principal
+		Main.Java 					-> Menu que permite la seleccion del ejercicio.
+		MainGUI.java				-> Menu en entorno grafico.
+		Textos_MainMenu.java	    -> Guarda los array de los textos a mostrar por el menu. El menu lo conforma la libreria ToolsAndMenu con la funcion menu.
+
+	res.background                  -> Incluye la imagen de fondo del menu principal. 
+		
+	Utilidades						-> Librerias propias (Sufre cambios)
+		ColorConsole.java			-> Permite colorear en consola (No compatible con Eclipse)(usado para facilitar la lectura en consola)
+		ToolsAndMenu.java		    -> Mayormente operaciones para decorar en terminal. (NUEVA VERSION DE LA LIBRERIA NO RETROCOMPATIBLE) Mas info sobre el log de version en la libreria
+											* Decoracion de titulos.
+											* Creacion de menus principales.
+											* Capturadores por teclado de variables(int,doubles, String, yes or no) con sus excepcion controladas.
+											* Pausas (Por teclas) o por tiempos.
+											* Generador de numeros aleatorios con minimos y maximo (NO USADA PARA NO ABSTRAER CODIGO CODIGO)
+											
+    Ejercicio1.Temperaturas			-> Dadas 10 temperaturas se opera con estas
+		MainTemeperaturas.java   	-> Es la entrada al ejercicio y realiza la instanciacion de la clase de las temperaturas tiene el menu y captura las temperaturas
+		temperaturasGUI.JAVA        -> Es una interpretacion del ejercicio en modo grafico.
+		temperaturas.Java   		-> Es la clase que realiza toda la logica. Permite se instanciada para disponer de varias clase con la misma extructura
+		Textos_TemperaturaMenu.java -> Guarda los array de los textos a mostrar por el menu. El menu lo conforma la libreria ToolsAndMenu con la funcion menu.
+	
+	Ejercicio2.LoteriaPrimitiva 	-> Vamos a crear nuestra loteria
+		MainLoteriaPrimitiva.java 	-> Es la entrada al ejercicio y realiza la instanciacion de la clase de las loteria
+		Loteria.java				-> Tiene toda la logica de la loteria (Conforma los boletos con numeros aleatorios, conforma la convinacion ganadora, y comprueba si hay algun ganador).
+
+	Ejercicio3.Cine     		    -> 
+		MainCine.java	   		    -> Es la entrada al ejercicio y realiza toda la logica del programa.
+											* DEBUGMODE true ->Rellena el array list con datos para la comprobacion.
+		peliculas.java				-> Da forma al objeto y caracteristica de una pelicula.
+		Textos_CineMenu.java 		-> Guarda los array de los textos a mostrar por el menu. El menu lo conforma la libreria ToolsAndMenu con la funcion menu.
+	
+	Ejercicio4.Matriculas			->
+		MainMatriculas.java			-> Es la entrada al ejercicio y realiza toda la logica del programa.
+											* DEBUGMODE true ->Rellena las colecciones con datos para la comprobacion.
+		alumnos.java				-> Da forma al objeto y caracteristica de un alumno
+		Textos_MatriculaMenu.java 	-> Guarda los array de los textos a mostrar por cel menu. El menu lo conforma la libreria ToolsAndMenu con la funcion menu.
+	
